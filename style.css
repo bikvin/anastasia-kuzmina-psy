@@ -1,0 +1,372 @@
+:root {
+  --light-blue-color: #6ec1e4;
+  --very-light-blue-color: #d0eefb;
+  --dark-gray-color: #54595f;
+  --light-gray-color: #7a7a7a;
+  --green-color: #61ce70;
+  --very-light-gray-color: #d1d8db;
+}
+
+/*----------------------------------COMMON-----------------------------------------*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Lora', serif; */
+  font-family: "Carlito", sans-serif;
+}
+
+header {
+  border-bottom: 1px solid var(--very-light-gray-color);
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  z-index: 1;
+}
+
+header h2 {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 34px;
+}
+
+.wrapper {
+  max-width: 1134px;
+  margin: 0 auto;
+}
+
+.what-i-work-with h2,
+.prices h2,
+.work-progress h2 {
+  text-align: center;
+}
+
+.what-i-work-with h4,
+.prices h4,
+.work-progress h4 {
+  font-size: 24px;
+  color: var(--light-blue-color);
+}
+
+.prices .comment,
+.work-progress .comment {
+  font-family: "Lora", serif;
+  font-size: 14px;
+  color: var(--light-gray-color);
+  padding: 10px 0;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+
+.work-progress .stage ul li,
+.what-i-work-with .request ul li {
+  /* list-style-image: url(img/tick.svg); */
+  list-style: none;
+  padding: 4px 0 4px 22px;
+  font-family: "Lora", serif;
+  line-height: 150%;
+  position: relative;
+}
+
+.work-progress .stage ul li::before,
+.what-i-work-with .request ul li::before {
+  content: '';
+  display: inline-block;
+  height: 13px;
+  width: 15px;
+  background-image: url(img/tick.svg);
+  position: absolute;
+  top: 10px;
+  left: 0px;
+}
+
+/*----------------------------------END OF COMMON-----------------------------------------*/
+
+/*----------------------------------TOP MENU----------------------------------------------*/
+.top-menu-desktop {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  /* padding: 5px 10px 5px 10px; */
+}
+
+.top-menu-desktop h2 {
+  margin: auto 0;
+}
+
+.top-menu-desktop ul {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-menu-desktop ul li {
+  list-style-type: none;
+  font-size: 16px;
+}
+
+/*----------------------------------END OF TOP MENU----------------------------------------------*/
+
+/*----------------------------------HERO SECTION----------------------------------------------*/
+
+.hero-section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.hero-section div {
+  flex: 1;
+  /* width: 50%; */
+}
+
+.hero-section .left img {
+  height: 70vh;
+}
+
+.hero-section .right {
+  font-family: "Lora", serif;
+  line-height: 150%;
+}
+
+/*----------------------------------END OF HERO SECTION----------------------------------------------*/
+
+/*----------------------------------WHAT I WORK WITH----------------------------------------------*/
+
+.what-i-work-with {
+  /* background: var(--very-light-blue-color); */
+  padding: 30px 0 130px 0;
+}
+
+.what-i-work-with .content {
+  display: flex;
+  padding: 40px 0 0 0;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.what-i-work-with .request ul {
+  padding-left: 40px;
+  padding-top: 10px;
+}
+
+/* .what-i-work-with .request ul li {
+  list-style: none;
+  padding: 4px 0 4px 0px;
+  font-family: "Lora", serif;
+  position: relative;
+}  */
+
+.what-i-work-with .request {
+  /* width: 33%; */
+  margin-bottom: 40px;
+  flex: 1 1 30%;
+  position: relative;
+  padding-left: 130px;
+}
+
+.what-i-work-with .relationships::before {
+  content: "";
+  background: url("img/relationship.svg");
+  display: block;
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  top: calc(50% - 32px + 15px);
+  /* calc(100% + 35px +550px); */
+  left: 50px;
+  background-repeat: no-repeat;
+}
+
+.what-i-work-with .emotions::before {
+  content: "";
+  background: url("img/emotions.svg");
+  display: block;
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  top: calc(50% - 32px + 15px);
+  /* calc(100% + 35px + 50px); */
+  left: 50px;
+  background-repeat: no-repeat;
+}
+
+.what-i-work-with .conditions::before {
+  content: "";
+  background: url("img/conditions.svg");
+  display: block;
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  top: calc(50% - 32px + 15px);
+  /* calc(100% + 35px + 50px); */
+  left: 50px;
+  background-repeat: no-repeat;
+}
+
+.what-i-work-with .self-esteem::before {
+  content: "";
+  background: url("img/self-esteem.svg");
+  display: block;
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  top: calc(50% - 32px + 15px);
+  /* calc(100% + 35px + 50px); */
+  left: 50px;
+  background-repeat: no-repeat;
+}
+
+.what-i-work-with .addictions::before {
+  content: "";
+  background: url("img/addictions.svg");
+  display: block;
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  top: calc(50% - 32px + 15px);
+  /* calc(100% + 35px + 50px); */
+  left: 50px;
+  background-repeat: no-repeat;
+  transform: rotate(-30deg);
+}
+
+.what-i-work-with .disorders::before {
+  content: "";
+  background: url("img/disorders.svg");
+  display: block;
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  top: calc(50% - 32px + 15px);
+  /* calc(100% + 35px + 50px); */
+  left: 50px;
+  background-repeat: no-repeat;
+}
+
+/*----------------------------------END OF WHAT I WORK WITH----------------------------------------------*/
+
+/*----------------------------------PRICES----------------------------------------------*/
+
+.prices {
+  padding: 100px 0 100px 0;
+}
+
+.prices .content {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.prices .service {
+  flex: 1 1 33%;
+}
+
+.prices .price {
+  font-family: "Lora", serif;
+  font-size: 20px;
+}
+
+/*----------------------------------END OF PRICES----------------------------------------------*/
+
+/*----------------------------------WORK PROGRESS----------------------------------------------*/
+
+.work-progress {
+  padding: 100px 0 100px 0;
+}
+
+.work-progress .content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 0 0 0;
+}
+
+.work-progress .stage {
+  flex: 1 1 50%;
+  margin-bottom: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  
+
+}
+.work-progress .stage .label {
+  width: 30%;
+  text-align: center;
+}
+
+.work-progress .stage ul {
+  width: 70%;
+}
+
+
+.work-progress h4 {
+  font-size:18px;
+  
+}
+
+.work-progress h4 .number {
+  font-size: 100px;
+  vertical-align: middle;
+  line-height: 80%;
+  /* word-break: keep-all; */
+  
+}
+
+
+
+.work-progress .stage-label {
+  vertical-align: middle;
+}
+
+.work-progress .stage ul {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+/*----------------------------------END OF WORK PROGRESS----------------------------------------------*/
+
+/*----------------------------------PARALLAX----------------------------------------------*/
+
+.parallax {
+ 
+
+  /* Set a specific height */
+  min-height: 400px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.face {
+  background-image: url(img/face.jpg);
+}
+
+.exit {
+  background-image: url(img/exit.jpg);
+}
+
+.exit2 {
+  background-image: url(img/exit2.jpg);
+}
+
+
+
+
