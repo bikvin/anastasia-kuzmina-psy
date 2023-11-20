@@ -137,7 +137,8 @@ h2 {
 
 .hero-section .right {
   font-family: "Lora", serif;
-  line-height: 150%;
+  font-size: 20px;
+  line-height: 170%;
 }
 
 /*----------------------------------END OF HERO SECTION----------------------------------------------*/
