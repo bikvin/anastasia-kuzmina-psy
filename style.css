@@ -114,6 +114,59 @@ h2 {
   font-size: 16px;
 }
 
+.top-menu-desktop ul li a{
+  text-decoration:none;
+  color:#000;
+  transition: all 500ms ease;
+}
+
+.top-menu-desktop ul li a:hover{
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+
+
+.whatsapp a::before {
+  content: "";
+  display: inline-block;
+  background: url(img/whatsapp.svg);
+  width: 20px;
+  height: 20px;
+  vertical-align:text-top;
+  margin-right: 5px;
+}
+
+.telegram a::before {
+  content: "";
+  display: inline-block;
+  background: url(img/telegram.svg);
+  width: 20px;
+  height: 20px;
+  vertical-align:text-top;
+  margin-right: 5px;
+}
+
+.telegram-channel a::before {
+  content: "";
+  display: inline-block;
+  background: url(img/telegram-channel.svg);
+  width: 20px;
+  height: 20px;
+  vertical-align:text-top;
+  margin-right: 5px;
+}
+
+.instagram a::before {
+  content: "";
+  display: inline-block;
+  background: url(img/instagram.svg);
+  width: 20px;
+  height: 20px;
+  vertical-align:text-top;
+  margin-right: 5px;
+}
+
 /*----------------------------------END OF TOP MENU----------------------------------------------*/
 
 /*----------------------------------HERO SECTION----------------------------------------------*/
