@@ -42,7 +42,8 @@ h2 {
 
 .what-i-work-with h2,
 .prices h2,
-.work-progress h2 {
+.work-progress h2,
+.slider h2 {
   text-align: center;
 }
 
@@ -65,10 +66,8 @@ h2 {
   white-space: nowrap;
 }
 
-
 .work-progress .stage ul li,
 .what-i-work-with .request ul li {
-  /* list-style-image: url(img/tick.svg); */
   list-style: none;
   padding: 4px 0 4px 22px;
   font-family: "Lora", serif;
@@ -78,14 +77,30 @@ h2 {
 
 .work-progress .stage ul li::before,
 .what-i-work-with .request ul li::before {
-  content: '';
+  content: "";
   display: inline-block;
   height: 13px;
   width: 15px;
-  background-image: url(img/tick.svg);
+  background-image: url(img/icons/ui/tick.svg);
   position: absolute;
   top: 10px;
   left: 0px;
+}
+
+.fade{
+  position: fixed;
+  top:0;
+  left: 0;
+  content:'';
+  width: 100vw;
+  height:100vh;
+  background: rgba(0, 0,0, 0.5);
+  display: none;
+
+}
+
+.fade-shown {
+  display: block;
 }
 
 /*----------------------------------END OF COMMON-----------------------------------------*/
@@ -114,56 +129,54 @@ h2 {
   font-size: 16px;
 }
 
-.top-menu-desktop ul li a{
-  text-decoration:none;
-  color:#000;
+.top-menu-desktop ul li a {
+  text-decoration: none;
+  color: #000;
   transition: all 500ms ease;
 }
 
-.top-menu-desktop ul li a:hover{
+.top-menu-desktop ul li a:hover {
   font-size: 18px;
   text-decoration: underline;
 }
 
-
-
 .whatsapp a::before {
   content: "";
   display: inline-block;
-  background: url(img/whatsapp.svg);
+  background: url(img/icons/social-media/whatsapp.svg);
   width: 20px;
   height: 20px;
-  vertical-align:text-top;
+  vertical-align: text-top;
   margin-right: 5px;
 }
 
 .telegram a::before {
   content: "";
   display: inline-block;
-  background: url(img/telegram.svg);
+  background: url(img/icons/social-media/telegram.svg);
   width: 20px;
   height: 20px;
-  vertical-align:text-top;
+  vertical-align: text-top;
   margin-right: 5px;
 }
 
 .telegram-channel a::before {
   content: "";
   display: inline-block;
-  background: url(img/telegram-channel.svg);
+  background: url(img/icons/social-media/telegram-channel.svg);
   width: 20px;
   height: 20px;
-  vertical-align:text-top;
+  vertical-align: text-top;
   margin-right: 5px;
 }
 
 .instagram a::before {
   content: "";
   display: inline-block;
-  background: url(img/instagram.svg);
+  background: url(img/icons/social-media/instagram.svg);
   width: 20px;
   height: 20px;
-  vertical-align:text-top;
+  vertical-align: text-top;
   margin-right: 5px;
 }
 
@@ -233,7 +246,7 @@ h2 {
 
 .what-i-work-with .relationships::before {
   content: "";
-  background: url("img/relationship.svg");
+  background: url("img/icons/what-i-work-with/relationship.svg");
   display: block;
   width: 64px;
   height: 64px;
@@ -246,7 +259,7 @@ h2 {
 
 .what-i-work-with .emotions::before {
   content: "";
-  background: url("img/emotions.svg");
+  background: url("img/icons/what-i-work-with/emotions.svg");
   display: block;
   width: 64px;
   height: 64px;
@@ -259,7 +272,7 @@ h2 {
 
 .what-i-work-with .conditions::before {
   content: "";
-  background: url("img/conditions.svg");
+  background: url("img/icons/what-i-work-with/conditions.svg");
   display: block;
   width: 64px;
   height: 64px;
@@ -272,7 +285,7 @@ h2 {
 
 .what-i-work-with .self-esteem::before {
   content: "";
-  background: url("img/self-esteem.svg");
+  background: url("img/icons/what-i-work-with/self-esteem.svg");
   display: block;
   width: 64px;
   height: 64px;
@@ -285,7 +298,7 @@ h2 {
 
 .what-i-work-with .addictions::before {
   content: "";
-  background: url("img/addictions.svg");
+  background: url("img/icons/what-i-work-with/addictions.svg");
   display: block;
   width: 64px;
   height: 64px;
@@ -299,7 +312,7 @@ h2 {
 
 .what-i-work-with .disorders::before {
   content: "";
-  background: url("img/disorders.svg");
+  background: url("img/icons/what-i-work-with/disorders.svg");
   display: block;
   width: 64px;
   height: 64px;
@@ -354,9 +367,7 @@ h2 {
 
   display: flex;
   align-items: center;
-  justify-content:center;
-  
-
+  justify-content: center;
 }
 .work-progress .stage .label {
   width: 30%;
@@ -367,10 +378,8 @@ h2 {
   width: 70%;
 }
 
-
 .work-progress h4 {
-  font-size:18px;
-  
+  font-size: 18px;
 }
 
 .work-progress h4 .number {
@@ -378,10 +387,7 @@ h2 {
   vertical-align: middle;
   line-height: 80%;
   /* word-break: keep-all; */
-  
 }
-
-
 
 .work-progress .stage-label {
   vertical-align: middle;
@@ -397,10 +403,8 @@ h2 {
 /*----------------------------------PARALLAX----------------------------------------------*/
 
 .parallax {
- 
-
   /* Set a specific height */
-  min-height: 400px; 
+  min-height: 400px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -410,17 +414,135 @@ h2 {
 }
 
 .face {
-  background-image: url(img/face.jpg);
+  background-image: url(img/bg/face.jpg);
 }
 
 .exit {
-  background-image: url(img/exit.jpg);
+  background-image: url(img/bg/exit.jpg);
 }
 
 .exit2 {
-  background-image: url(img/exit2.jpg);
+  background-image: url(img/bg/exit2.jpg);
+}
+
+.sofa {
+  background-image: url(img/bg/sofa.jpg);
+}
+
+/*----------------------------------END OF PARALLAX----------------------------------------------*/
+
+/*----------------------------------SLIDER----------------------------------------------*/
+
+.slider {
+  padding: 100px 0 100px 0;
+}
+
+.slider h2 {
+  margin-bottom: 50px;
+}
+
+.slider-body {
+  position: relative;
+}
+
+.slider-viewport {
+  margin-top: 50px;
+  /* background: #ccc; */
+  width: 100%;
+  margin: 0 auto;
+  height: 300px;
+  /* display: flex; */
+
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-item {
+  width: 33.33%;
+  /* border: 1px solid aqua; */
+  height: 100%;
+  /* flex-shrink: 0; */
+  /* transform: translateX(-100%); */
+  transition: all 1s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slider-item img {
+  max-height: 100%;
+  display: block;
+  width: 50%;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid var(--very-light-gray-color);
+  cursor: pointer;
+}
+
+.slider-body .btn {
+  position: absolute;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.slider-body .btn:hover {
+  width: 55px;
+  height: 55px;
+  
+}
+
+.slider-body .btn-left {
+  top: calc(50% - 25px);
+  left: calc(33.33% - 25px);
+}
+
+.slider-body .btn-right {
+  top: calc(50% - 25px);
+  left: calc(66.66% - 25px);
+  transform: rotate(180deg);
+}
+
+.slider-body .btn-left:hover{
+  top: calc(50% - 25px - 2.5px);
+  left: calc(33.33% - 25px - 5px);
+}
+
+.slider-body .btn-right:hover{
+  top: calc(50% - 25px - 2.5px);
+  /* left: calc(66.66% - 25px + 2.5px); */
 }
 
 
 
+.no-transition {
+  transition: none;
+}
 
+.small-slider-item {
+  height: 50%;
+  top: calc(50% - 75px);
+}
+
+.large-slider-item {
+  height:80vh;
+  width: 100vw;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+/* .large-slider-item::before{
+  position: fixed;
+  top:0;
+  left: 0;
+  content:'';
+  width: 100vw;
+  height:100vh;
+  background: rgba(0, 0,0, 0.5);
+} */
