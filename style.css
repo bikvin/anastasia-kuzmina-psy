@@ -5,6 +5,15 @@
   --light-gray-color: #7a7a7a;
   --green-color: #61ce70;
   --very-light-gray-color: #d1d8db;
+  --almost-black-color: #070917;
+  --light-orange-color: #f05b10;
+  --dark-orange-color: #E5570F;
+  --dark-red-color: #9A0F10;
+  --lighter-red-color: #A21011;
+
+
+  
+
 }
 
 /*----------------------------------COMMON-----------------------------------------*/
@@ -229,12 +238,6 @@ h2 {
   padding-top: 10px;
 }
 
-/* .what-i-work-with .request ul li {
-  list-style: none;
-  padding: 4px 0 4px 0px;
-  font-family: "Lora", serif;
-  position: relative;
-}  */
 
 .what-i-work-with .request {
   /* width: 33%; */
@@ -478,6 +481,7 @@ h2 {
   margin: 0 auto;
   border: 1px solid var(--very-light-gray-color);
   cursor: pointer;
+
 }
 
 .slider-body .btn {
@@ -537,12 +541,167 @@ h2 {
   z-index: 2;
 }
 
-/* .large-slider-item::before{
-  position: fixed;
-  top:0;
-  left: 0;
-  content:'';
-  width: 100vw;
-  height:100vh;
-  background: rgba(0, 0,0, 0.5);
+
+
+/*----------------------------------END OF SLIDER----------------------------------------------*/
+
+/*----------------------------------WEBINARS----------------------------------------------*/
+
+.webinars .content{
+  margin: 100px 0;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  
+}
+
+
+
+.webinars .circle-outer {
+  height: 240px;
+  width: 240px;
+  border-radius: 50%;
+  background: var(--dark-orange-color);
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  transition: height 1s ease, width 1s ease;
+
+
+
+}
+
+/* .webinars .circle-outer:hover {
+  height: 210px;
+  width: 210px;
 } */
+
+.webinars .circle-inner {
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  background: var(--light-orange-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s ease;
+  
+}
+
+.webinars .circle-inner:hover {
+  height: 200px;
+  width: 200px;
+}
+
+.webinars .articles .circle-outer{
+  background: var(--dark-red-color);
+}
+
+.webinars .articles .circle-inner{
+  background: var(--lighter-red-color);
+}
+
+
+/* .webinars .circle-inner:hover {
+  height: 240px;
+  width: 240px;
+} */
+
+.webinars .circle-inner img{
+  width: 100px;
+}
+
+.webinars a{
+  text-decoration: none;
+}
+
+.webinars .circle-inner p{
+  margin-top: 20px;
+  color: #fff;
+  font-size: 18px;
+}
+
+
+
+/*----------------------------------END OF WEBINARS----------------------------------------------*/
+
+
+
+/*----------------------------------FOOTER----------------------------------------------*/
+
+footer {
+  background: var(--almost-black-color);
+  
+  padding:100px 0;
+  color: #fff;
+}
+
+footer h4 {
+  font-size:20px;
+}
+
+footer ul {
+  margin-top: 40px;
+  display: flex;
+  gap: 30px;
+}
+
+footer ul li {
+  list-style: none;
+  font-size: 18px;
+}
+
+footer ul li a{
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+
+footer ul li a:hover{
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+
+footer .whatsapp a::before {
+  width:40px;
+  height: 40px;
+
+  vertical-align: middle;
+  margin-right: 10px; 
+}
+
+footer .telegram a::before {
+  width:40px;
+  height: 40px;
+  vertical-align: middle;
+  margin-right: 10px; 
+}
+
+footer .telegram-channel a::before {
+  /* content: "";
+  display: inline-block; */
+  background: url(img/icons/social-media/telegram-channel-white.svg);
+  width:40px;
+  height: 40px;
+  vertical-align: middle;
+  margin-right: 10px; 
+  /* width: 20px;
+  height: 20px;
+  vertical-align: text-top;
+  margin-right: 5px; */
+}
+
+footer .instagram a::before {
+  width:40px;
+  height: 40px;
+  vertical-align: middle;
+  margin-right: 10px; 
+}
+
+
+footer .phone, footer .name {
+  margin-top:40px;
+  font-size:18px;
+}
