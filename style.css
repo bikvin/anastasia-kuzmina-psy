@@ -565,16 +565,15 @@ h2 {
   display: flex;
   align-items:center;
   justify-content:center;
-  transition: height 1s ease, width 1s ease;
+  transition: all 1s ease
 
 
 
 }
 
-/* .webinars .circle-outer:hover {
-  height: 210px;
-  width: 210px;
-} */
+.webinars .circle-outer:hover {
+  transform: rotate(7deg);
+}
 
 .webinars .circle-inner {
   height: 180px;
