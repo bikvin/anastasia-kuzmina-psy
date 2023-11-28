@@ -108,6 +108,7 @@ h2 {
   height:100vh;
   background: rgba(0, 0,0, 0.5);
   display: none;
+  z-index: 1;
 
 }
 
