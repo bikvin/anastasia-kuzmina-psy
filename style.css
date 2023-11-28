@@ -1,5 +1,8 @@
 :root {
   --light-blue-color: #6ec1e4;
+  --darker-blue-color: #65bde2;
+  --turquoise-color: #47E4D3;
+  --darker-turquoise-color: #2ce0cc;
   --very-light-blue-color: #d0eefb;
   --dark-gray-color: #54595f;
   --light-gray-color: #7a7a7a;
@@ -561,7 +564,7 @@ h2 {
   height: 240px;
   width: 240px;
   border-radius: 50%;
-  background: var(--dark-orange-color);
+  background: var(--darker-turquoise-color);
   display: flex;
   align-items:center;
   justify-content:center;
@@ -579,7 +582,7 @@ h2 {
   height: 180px;
   width: 180px;
   border-radius: 50%;
-  background: var(--light-orange-color);
+  background: var(--turquoise-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -594,11 +597,11 @@ h2 {
 }
 
 .webinars .articles .circle-outer{
-  background: var(--dark-red-color);
+  background: var(--darker-blue-color);
 }
 
 .webinars .articles .circle-inner{
-  background: var(--lighter-red-color);
+  background: var(--light-blue-color);
 }
 
 
