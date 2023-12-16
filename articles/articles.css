@@ -1,0 +1,118 @@
+.article-hero {
+  margin-top: 50px;
+
+  background-image: url(../img/bg/article.jpg);
+
+  display: flex;
+  align-items: center;
+}
+
+.article-hero h1 {
+  width: 100%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.35);
+  padding: 20px 0;
+  font-weight: 400;
+  font-size: 62px;
+  font-family: "Lora", serif;
+}
+
+.article-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px 10%;
+  padding: 100px 0 150px 0;
+}
+
+.article-grid .article-image {
+  width: 400px;
+  height: 300px;
+  background-image: url("../img/bg/article2.jpg");
+  background-size: contain;
+}
+
+.article-grid a:nth-child(1) .article-image {
+  background-image: url("../img/bg/article1.jpg");
+}
+
+.article-grid .a:nth-child(2) .article-image {
+  background-image: url("../img/bg/article2.jpg");
+}
+.article-grid a:nth-child(3) .article-image {
+  background-image: url("../img/bg/article3.jpg");
+}
+.article-grid a:nth-child(4) .article-image {
+  background-image: url("../img/bg/article4.jpg");
+}
+.article-grid a:nth-child(5) .article-image {
+  background-image: url("../img/bg/article5.jpg");
+}
+
+.article-grid .article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.article-grid .article:hover {
+  transform: translateY(-5px);
+}
+
+.article-grid h4 {
+  font-size: 24px;
+  color: var(--light-blue-color);
+  font-weight: 400;
+  text-align: left;
+  padding: 20px 0 0px 0;
+}
+
+.article-grid .description {
+  font-family: "Lora", serif;
+  font-size: 16px;
+  line-height: 150%;
+  padding: 5px 0px 0 0px;
+}
+
+.single-article {
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+
+.single-article .wrapper {
+  max-width: 640px;
+}
+
+.single-article h1,
+.single-article h2,
+.single-article h3,
+.single-article h4,
+.single-article p,
+.single-article li {
+  font-family: "Lora", serif;
+}
+
+.single-article p,
+.single-article li {
+  font-size: 20px;
+  line-height: 170%;
+  margin-bottom: 20px;
+}
+
+.single-article h2 {
+  margin-bottom: 50px;
+}
+
+.single-article h3 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+.single-article img {
+  /* height: 300px; */
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 50px;
+  width:100%;
+}

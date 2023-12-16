@@ -56,7 +56,7 @@ sliderItems.forEach((item, index) => {
 
 });
 
-leftButton.addEventListener("click", () => {
+rightButton.addEventListener("click", () => {
   console.log("left");
   sliderItems.forEach((item) => {
     let position = +item.dataset.position;
@@ -80,7 +80,7 @@ leftButton.addEventListener("click", () => {
   });
 });
 
-rightButton.addEventListener("click", () => {
+leftButton.addEventListener("click", () => {
   sliderItems.forEach((item) => {
     let position = +item.dataset.position;
 

@@ -1,0 +1,407 @@
+/*----------------------------------HERO SECTION----------------------------------------------*/
+
+.hero-section {
+  padding-top: 90px;
+  padding-bottom: 130px;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.hero-section div {
+  flex: 1;
+  /* width: 50%; */
+}
+
+.hero-section .left img {
+  height: 70vh;
+}
+
+.hero-section .right {
+  font-family: "Lora", serif;
+  font-size: 20px;
+  line-height: 170%;
+}
+
+/*----------------------------------END OF HERO SECTION----------------------------------------------*/
+
+/*----------------------------------WHAT I WORK WITH----------------------------------------------*/
+
+.what-i-work-with {
+  /* background: var(--very-light-blue-color); */
+  padding: 30px 0 130px 0;
+}
+
+.what-i-work-with .content {
+  display: flex;
+  padding: 40px 0 0 0;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.what-i-work-with .request ul {
+  padding-left: 40px;
+  padding-top: 10px;
+}
+
+.what-i-work-with .request {
+  /* width: 33%; */
+  margin-bottom: 40px;
+  flex: 1 1 30%;
+  position: relative;
+  padding-left: 130px;
+}
+
+.what-i-work-with .relationships::before {
+  content: "";
+  background: url("img/icons/what-i-work-with/relationship.svg");
+  display: block;
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  top: calc(50% - 32px + 15px);
+  /* calc(100% + 35px +550px); */
+  left: 50px;
+  background-repeat: no-repeat;
+}
+
+.what-i-work-with .emotions::before {
+  content: "";
+  background: url("img/icons/what-i-work-with/emotions.svg");
+  display: block;
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  top: calc(50% - 32px + 15px);
+  /* calc(100% + 35px + 50px); */
+  left: 50px;
+  background-repeat: no-repeat;
+}
+
+.what-i-work-with .conditions::before {
+  content: "";
+  background: url("img/icons/what-i-work-with/conditions.svg");
+  display: block;
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  top: calc(50% - 32px + 15px);
+  /* calc(100% + 35px + 50px); */
+  left: 50px;
+  background-repeat: no-repeat;
+}
+
+.what-i-work-with .self-esteem::before {
+  content: "";
+  background: url("img/icons/what-i-work-with/self-esteem.svg");
+  display: block;
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  top: calc(50% - 32px + 15px);
+  /* calc(100% + 35px + 50px); */
+  left: 50px;
+  background-repeat: no-repeat;
+}
+
+.what-i-work-with .addictions::before {
+  content: "";
+  background: url("img/icons/what-i-work-with/addictions.svg");
+  display: block;
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  top: calc(50% - 32px + 15px);
+  /* calc(100% + 35px + 50px); */
+  left: 50px;
+  background-repeat: no-repeat;
+  transform: rotate(-30deg);
+}
+
+.what-i-work-with .disorders::before {
+  content: "";
+  background: url("img/icons/what-i-work-with/disorders.svg");
+  display: block;
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  top: calc(50% - 32px + 15px);
+  /* calc(100% + 35px + 50px); */
+  left: 50px;
+  background-repeat: no-repeat;
+}
+
+/*----------------------------------END OF WHAT I WORK WITH----------------------------------------------*/
+
+/*----------------------------------PRICES----------------------------------------------*/
+
+.prices {
+  padding: 100px 0 100px 0;
+}
+
+.prices .content {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.prices .service {
+  flex: 1 1 33%;
+}
+
+.prices .price {
+  font-family: "Lora", serif;
+  font-size: 20px;
+}
+
+/*----------------------------------END OF PRICES----------------------------------------------*/
+
+/*----------------------------------WORK PROGRESS----------------------------------------------*/
+
+.work-progress {
+  padding: 100px 0 100px 0;
+}
+
+.work-progress .content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 0 0 0;
+}
+
+.work-progress .stage {
+  flex: 1 1 50%;
+  margin-bottom: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.work-progress .stage .label {
+  width: 30%;
+  text-align: center;
+}
+
+.work-progress .stage ul {
+  width: 70%;
+}
+
+.work-progress h4 {
+  font-size: 18px;
+}
+
+.work-progress h4 .number {
+  font-size: 100px;
+  vertical-align: middle;
+  line-height: 80%;
+  /* word-break: keep-all; */
+}
+
+.work-progress .stage-label {
+  vertical-align: middle;
+}
+
+.work-progress .stage ul {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+/*----------------------------------END OF WORK PROGRESS----------------------------------------------*/
+
+/*----------------------------------PARALLAX----------------------------------------------*/
+
+/* base definition of parallax is in common.css */
+
+.face {
+  background-image: url(img/bg/face.jpg);
+}
+
+.exit {
+  background-image: url(img/bg/exit.jpg);
+}
+
+.exit2 {
+  background-image: url(img/bg/exit2.jpg);
+}
+
+.sofa {
+  background-image: url(img/bg/sofa.jpg);
+}
+
+/*----------------------------------END OF PARALLAX----------------------------------------------*/
+
+/*----------------------------------SLIDER----------------------------------------------*/
+
+.slider {
+  padding: 100px 0 100px 0;
+}
+
+.slider h2 {
+  margin-bottom: 50px;
+}
+
+.slider-body {
+  position: relative;
+}
+
+.slider-viewport {
+  margin-top: 50px;
+  /* background: #ccc; */
+  width: 100%;
+  margin: 0 auto;
+  height: 300px;
+  /* display: flex; */
+
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-item {
+  width: 33.33%;
+  /* border: 1px solid aqua; */
+  height: 100%;
+  /* flex-shrink: 0; */
+  /* transform: translateX(-100%); */
+  transition: all 1s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slider-item img {
+  max-height: 100%;
+  display: block;
+  width: 50%;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid var(--very-light-gray-color);
+  cursor: pointer;
+}
+
+.slider-body .btn {
+  position: absolute;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.slider-body .btn:hover {
+  width: 55px;
+  height: 55px;
+}
+
+.slider-body .btn-left {
+  top: calc(50% - 25px);
+  left: calc(33.33% - 25px);
+}
+
+.slider-body .btn-right {
+  top: calc(50% - 25px);
+  left: calc(66.66% - 25px);
+  transform: rotate(180deg);
+}
+
+.slider-body .btn-left:hover {
+  top: calc(50% - 25px - 2.5px);
+  left: calc(33.33% - 25px - 5px);
+}
+
+.slider-body .btn-right:hover {
+  top: calc(50% - 25px - 2.5px);
+  /* left: calc(66.66% - 25px + 2.5px); */
+}
+
+.no-transition {
+  transition: none;
+}
+
+.small-slider-item {
+  height: 50%;
+  top: calc(50% - 75px);
+}
+
+.large-slider-item {
+  height: 80vh;
+  width: 100vw;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+/*----------------------------------END OF SLIDER----------------------------------------------*/
+
+/*----------------------------------WEBINARS----------------------------------------------*/
+
+.webinars .content {
+  margin: 100px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.webinars .circle-outer {
+  height: 240px;
+  width: 240px;
+  border-radius: 50%;
+  background: var(--darker-turquoise-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s ease;
+}
+
+.webinars .circle-outer:hover {
+  transform: rotate(7deg);
+}
+
+.webinars .circle-inner {
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  background: var(--turquoise-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s ease;
+}
+
+.webinars .circle-inner:hover {
+  height: 200px;
+  width: 200px;
+}
+
+.webinars .articles .circle-outer {
+  background: var(--darker-blue-color);
+}
+
+.webinars .articles .circle-inner {
+  background: var(--light-blue-color);
+}
+
+/* .webinars .circle-inner:hover {
+    height: 240px;
+    width: 240px;
+  } */
+
+.webinars .circle-inner img {
+  width: 100px;
+}
+
+.webinars a {
+  text-decoration: none;
+}
+
+.webinars .circle-inner p {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 18px;
+}
+
+/*----------------------------------END OF WEBINARS----------------------------------------------*/

@@ -1,0 +1,314 @@
+:root {
+  --light-blue-color: #6ec1e4;
+  --darker-blue-color: #65bde2;
+  --turquoise-color: #47e4d3;
+  --darker-turquoise-color: #2ce0cc;
+  --very-light-blue-color: #d0eefb;
+  --dark-gray-color: #54595f;
+  --light-gray-color: #7a7a7a;
+  --green-color: #61ce70;
+  --very-light-gray-color: #d1d8db;
+  --almost-black-color: #070917;
+  --light-orange-color: #f05b10;
+  --dark-orange-color: #e5570f;
+  --dark-red-color: #9a0f10;
+  --lighter-red-color: #a21011;
+  --very-dark-red-color: #2e0505;
+}
+
+/*----------------------------------COMMON-----------------------------------------*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Lora', serif; */
+  font-family: "Carlito", sans-serif;
+}
+
+header {
+  border-bottom: 1px solid var(--very-light-gray-color);
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
+
+header h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit; /* no underline */
+}
+
+h2 {
+  font-size: 34px;
+  font-weight: 400;
+}
+
+h4 {
+  font-weight: 400;
+}
+
+.page-content {
+  padding-top: 40px ;
+  min-height: calc(100vh - 436px); /* 436px is the height of the footer */
+}
+
+.wrapper {
+  max-width: 1134px;
+  margin: 0 auto;
+}
+
+.what-i-work-with h2,
+.prices h2,
+.work-progress h2,
+.slider h2 {
+  text-align: center;
+}
+
+.what-i-work-with h4,
+.prices h4,
+.work-progress h4 {
+  font-size: 24px;
+  color: var(--light-blue-color);
+}
+
+.prices .comment,
+.work-progress .comment {
+  font-family: "Lora", serif;
+  font-size: 14px;
+  color: var(--light-gray-color);
+  padding: 10px 0;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.work-progress .stage ul li,
+.what-i-work-with .request ul li {
+  list-style: none;
+  padding: 4px 0 4px 22px;
+  font-family: "Lora", serif;
+  line-height: 150%;
+  position: relative;
+  font-size: 16px;
+}
+
+.work-progress .stage ul li::before,
+.what-i-work-with .request ul li::before {
+  content: "";
+  display: inline-block;
+  height: 13px;
+  width: 15px;
+  background-image: url(img/icons/ui/tick.svg);
+  position: absolute;
+  top: 10px;
+  left: 0px;
+}
+
+.fade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 1;
+}
+
+.fade-shown {
+  display: block;
+}
+
+/*----------------------------------END OF COMMON-----------------------------------------*/
+
+/*----------------------------------TOP MENU----------------------------------------------*/
+.top-menu-desktop {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  /* padding: 5px 10px 5px 10px; */
+}
+
+
+
+.top-menu-desktop a.logo{
+  margin: auto 0;
+
+}
+
+.top-menu-desktop ul {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-menu-desktop ul li {
+  list-style-type: none;
+  font-size: 16px;
+}
+
+.top-menu-desktop ul li a {
+  text-decoration: none;
+  color: #000;
+  transition: all 500ms ease;
+}
+
+.top-menu-desktop ul li a:hover {
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+.top-menu-desktop ul li a::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: text-top;
+  margin-right: 5px;
+  transition: all 500ms ease;
+}
+
+.top-menu-desktop ul li.whatsapp a::before  {
+  background: url(img/icons/social-media/whatsapp.svg);
+}
+
+.top-menu-desktop ul li.telegram a::before {
+  background: url(img/icons/social-media/telegram.svg);
+}
+
+.top-menu-desktop ul li.telegram-channel a::before {
+  background: url(img/icons/social-media/telegram-channel.svg);
+}
+
+.top-menu-desktop ul li.instagram a::before {
+  background: url(img/icons/social-media/no-insta.svg);
+  width: 21px;
+  height: 21px;
+
+}
+
+.top-menu-desktop ul li a:hover::before {
+  width: 23px;
+  height: 23px;
+}
+
+
+
+/*----------------------------------END OF TOP MENU----------------------------------------------*/
+
+
+
+/*----------------------------------FOOTER----------------------------------------------*/
+
+footer {
+  /* background: var(--almost-black-color); */
+  background: var(--very-dark-red-color);
+  
+  height:436px; /* applying fixed height to make footer sticky */
+  
+
+  padding: 100px 0;
+  color: #fff;
+}
+
+footer h4 {
+  font-size: 20px;
+}
+
+footer ul {
+  margin-top: 40px;
+  display: flex;
+  gap: 30px;
+  height: 48px;
+}
+
+footer ul li {
+  list-style: none;
+  font-size: 18px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+
+footer ul li a::before {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  vertical-align: text-top;
+  margin-right: 5px;
+  transition: all 500ms ease;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+
+footer ul li.whatsapp a::before{
+  background: url(img/icons/social-media/whatsapp.svg);
+}
+
+footer ul li.telegram a::before {
+  background: url(img/icons/social-media/telegram.svg);
+}
+
+footer ul li.telegram-channel a::before {
+  background: url(img/icons/social-media/telegram-channel-white.svg);
+}
+
+footer ul li.instagram a::before {
+  background: url(img/icons/social-media/no-insta.svg);
+  width: 42px;
+  height: 42px;
+
+}
+
+footer ul li a:hover::before {
+  width: 48px;
+  height: 48px;
+}
+
+
+footer .phone,
+footer .name {
+  margin-top: 40px;
+  font-size: 18px;
+}
+
+
+/*----------------------------------END OF FOOTER----------------------------------------------*/
+
+
+/*----------------------------------PARALLAX----------------------------------------------*/
+.parallax {
+  /* Set a specific height */
+  min-height: 400px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*----------------------------------END OF PARALLAX----------------------------------------------*/
