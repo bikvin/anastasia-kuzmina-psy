@@ -105,3 +105,28 @@
     line-height: 150%;
     padding: 10px 0px 0 0px;
 }
+
+/*----------------------------------END OF WEBINAR-GRID----------------------------------------------*/
+
+/*---------------------------------- < 760 px ----------------------------------------------*/
+@media only screen and (max-width: 760px) {
+
+  .webinars-grid {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .webinars-grid .wrapper {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  
+  .webinar-hero h1 {
+  
+    font-size: 42px;
+  
+  }
+}
+
+
+/*----------------------------------END OF  < 760 px ----------------------------------------------*/

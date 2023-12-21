@@ -21,6 +21,8 @@ const toggleAnimation = (item, position) => {
 
 const toggleSmallClass = (item, position) => {
     const smallPositions = [2,4];
+    // const smallPositions = [];
+    
     if(smallPositions.includes(position)){
         item.classList.add('small-slider-item');
     }else{
@@ -57,10 +59,10 @@ sliderItems.forEach((item, index) => {
 });
 
 rightButton.addEventListener("click", () => {
-  console.log("left");
+  // console.log("left");
   sliderItems.forEach((item) => {
     let position = +item.dataset.position;
-    console.log(position + 1);
+    // console.log(position + 1);
 
     position--;
 

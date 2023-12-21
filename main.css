@@ -15,6 +15,7 @@
 
 .hero-section .left img {
   height: 70vh;
+  max-width: 100%;
 }
 
 .hero-section .right {
@@ -34,10 +35,19 @@
 
 .what-i-work-with .content {
   display: flex;
+
   padding: 40px 0 0 0;
   flex-wrap: wrap;
   /* align-items: center; */
   justify-content: center;
+}
+
+.what-i-work-with .content div {
+  flex: 1 1 0px;
+}
+
+.what-i-work-with h4 {
+  text-align: center;
 }
 
 .what-i-work-with .request ul {
@@ -145,10 +155,12 @@
   justify-content: space-around;
   padding-top: 40px;
   text-align: center;
+  flex-wrap: wrap;
 }
 
 .prices .service {
-  flex: 1 1 33%;
+  /* flex: 1 1 33%; */
+  flex: 1 1 0px;
 }
 
 .prices .price {
@@ -267,14 +279,17 @@
   position: absolute;
   top: 0;
   left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .slider-item img {
   max-height: 100%;
   display: block;
-  width: 50%;
   width: auto;
   height: auto;
+  max-width: 100%;
   margin: 0 auto;
   border: 1px solid var(--very-light-gray-color);
   cursor: pointer;
@@ -339,10 +354,11 @@
 /*----------------------------------WEBINARS----------------------------------------------*/
 
 .webinars .content {
-  margin: 100px 0;
+  margin: 100px 0 50px 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .webinars .circle-outer {
@@ -405,3 +421,143 @@
 }
 
 /*----------------------------------END OF WEBINARS----------------------------------------------*/
+
+/*---------------------------------- < 1134 px ----------------------------------------------*/
+
+@media only screen and (max-width: 1134px) {
+  .hero-section {
+    /* padding: 0 50px; */
+    flex-direction: column;
+    gap: 50px;
+    height: unset;
+  }
+
+  .nowrap {
+    white-space: normal;
+  }
+}
+
+/*----------------------------------END OF  < 1134 px ----------------------------------------------*/
+
+/*---------------------------------- < 760 px ----------------------------------------------*/
+
+@media only screen and (max-width: 760px) {
+  .hero-section {
+    padding-bottom: 60px;
+  }
+
+  .hero-section div {
+    padding: 0 20px;
+  }
+
+  .hero-section .left img {
+    height: unset;
+    width: 100%;
+  }
+
+  .hero-section .right {
+    font-size: 16px;
+  }
+
+  .what-i-work-with {
+    padding: 0 20px;
+  }
+
+  .what-i-work-with .content div {
+    flex: 1 1 100%;
+    padding-left: 20%;
+  }
+
+  .prices {
+    padding: 50px 20px 50px 20px;
+  }
+  .prices .service {
+    flex: 1 1 100%;
+    margin-bottom: 30px;
+  }
+
+  .work-progress {
+    padding: 50px 20px 50px 20px;
+  }
+
+  .work-progress .stage {
+    flex: 1 1 100%;
+    flex-direction: column;
+  }
+
+  .work-progress .stage .label {
+    width: 100%;
+  }
+
+  .work-progress .stage ul {
+    width: 100%;
+    padding: 0;
+  }
+
+  .slider-item {
+    width: 100%;
+  }
+
+  .small-slider-item {
+    height: 100%;
+    top: 0;
+  }
+
+  .slider {
+    padding: 100px 20px 100px 20px;
+  }
+
+  .slider-viewport {
+    height: calc(70vw - 40px);
+  }
+
+  .slider-body .btn-right {
+    left: calc(100% - 50px);
+  }
+
+  .slider-body .btn-left,
+  .slider-body .btn-left:hover {
+    left: 0;
+  }
+
+  .webinars .circle-outer {
+    margin-bottom: 30px;
+  }
+
+  .large-slider-item {
+    max-height: calc(
+      100vw / 1.41 - 20px
+    ); /* make height based on width of viewport divided by sqrt(2) and 20px margins */
+    /* max-width: 100vw; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+}
+
+/*----------------------------------END OF  < 760 px ----------------------------------------------*/
+
+/*---------------------------------- < 300 px ----------------------------------------------*/
+@media only screen and (max-width: 760px) {
+  .what-i-work-with .request {
+    padding-left: 60px;
+  }
+
+  .what-i-work-with .request ul {
+    padding-left: 40px;
+  }
+
+  .what-i-work-with .request::before {
+    left: 0px;
+  }
+
+  /* .what-i-work-with .content div {
+    padding-left: 0;
+  } */
+
+  .what-i-work-with .content > div {
+    padding: 0;
+  }
+}
+/*---------------------------------- END OF < 300 px ----------------------------------------------*/

@@ -1,6 +1,6 @@
 :root {
   --light-blue-color: #6ec1e4;
-  --darker-blue-color: #65bde2;
+  --darker-blue-color: #65bce2d2;
   --turquoise-color: #47e4d3;
   --darker-turquoise-color: #2ce0cc;
   --very-light-blue-color: #d0eefb;
@@ -58,7 +58,7 @@ h4 {
 }
 
 .page-content {
-  padding-top: 40px ;
+  padding-top: 40px;
   min-height: calc(100vh - 436px); /* 436px is the height of the footer */
 }
 
@@ -141,11 +141,8 @@ h4 {
   /* padding: 5px 10px 5px 10px; */
 }
 
-
-
-.top-menu-desktop a.logo{
+.top-menu-desktop a.logo {
   margin: auto 0;
-
 }
 
 .top-menu-desktop ul {
@@ -181,7 +178,7 @@ h4 {
   transition: all 500ms ease;
 }
 
-.top-menu-desktop ul li.whatsapp a::before  {
+.top-menu-desktop ul li.whatsapp a::before {
   background: url(img/icons/social-media/whatsapp.svg);
 }
 
@@ -197,7 +194,6 @@ h4 {
   background: url(img/icons/social-media/no-insta.svg);
   width: 21px;
   height: 21px;
-
 }
 
 .top-menu-desktop ul li a:hover::before {
@@ -205,20 +201,15 @@ h4 {
   height: 23px;
 }
 
-
-
 /*----------------------------------END OF TOP MENU----------------------------------------------*/
-
-
 
 /*----------------------------------FOOTER----------------------------------------------*/
 
 footer {
   /* background: var(--almost-black-color); */
   background: var(--very-dark-red-color);
-  
-  height:436px; /* applying fixed height to make footer sticky */
-  
+
+  height: 436px; /* applying fixed height to make footer sticky */
 
   padding: 100px 0;
   color: #fff;
@@ -233,6 +224,7 @@ footer ul {
   display: flex;
   gap: 30px;
   height: 48px;
+  flex-wrap: wrap;
 }
 
 footer ul li {
@@ -263,8 +255,7 @@ footer ul li a:hover {
   font-size: 20px;
 }
 
-
-footer ul li.whatsapp a::before{
+footer ul li.whatsapp a::before {
   background: url(img/icons/social-media/whatsapp.svg);
 }
 
@@ -280,7 +271,6 @@ footer ul li.instagram a::before {
   background: url(img/icons/social-media/no-insta.svg);
   width: 42px;
   height: 42px;
-
 }
 
 footer ul li a:hover::before {
@@ -288,16 +278,13 @@ footer ul li a:hover::before {
   height: 48px;
 }
 
-
 footer .phone,
 footer .name {
   margin-top: 40px;
   font-size: 18px;
 }
 
-
 /*----------------------------------END OF FOOTER----------------------------------------------*/
-
 
 /*----------------------------------PARALLAX----------------------------------------------*/
 .parallax {
@@ -312,3 +299,59 @@ footer .name {
 }
 
 /*----------------------------------END OF PARALLAX----------------------------------------------*/
+
+/*---------------------------------- < 1134 px ----------------------------------------------*/
+
+@media only screen and (max-width: 1134px) {
+  .top-menu-desktop {
+    padding: 0 50px;
+  }
+
+  .wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+/*----------------------------------END OF  < 1134 px ----------------------------------------------*/
+
+/*---------------------------------- < 760 px ----------------------------------------------*/
+
+@media only screen and (max-width: 760px) {
+  .top-menu-desktop {
+    flex-direction: column;
+    height: 100px;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    /* align-items: center; */
+  }
+
+  .top-menu-desktop a h2 {
+    text-align: center;
+  }
+
+  .top-menu-desktop a.logo {
+    margin: 0;
+  }
+
+  .wrapper {
+    padding: 0;
+  }
+
+  footer {
+    padding: 100px 20px 100px 20px;
+    height: unset;
+  }
+
+  footer ul {
+    height: unset;
+  }
+
+  footer ul li {
+    flex: 1 1 100%;
+    
+  }
+}
+
+/*----------------------------------END OF  < 760 px ----------------------------------------------*/
