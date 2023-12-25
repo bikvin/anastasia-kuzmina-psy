@@ -3,6 +3,14 @@ const rightButton = document.querySelector(".btn-right");
 const sliderItems = document.querySelectorAll(".slider-item");
 const fade = document.querySelector(".fade");
 
+const accordionButtons = document.querySelectorAll(".accordion-section button");
+
+console.log('accordionButtons', accordionButtons);
+
+
+//////////////////////////////// SLIDER /////////////////////////////////////////////////
+
+
 const setTranslateX = (item, position) => {
   // the first visible item is at position 3. 2 items to the left are invisible. And any number of items to the right.
   item.style.transform = `translateX(${100 * (position - 2)}%)`;
@@ -106,3 +114,21 @@ leftButton.addEventListener("click", () => {
     // item.classList.remove('no-transition');
   });
 });
+//////////////////////////////// END OF SLIDER /////////////////////////////////////////////////
+
+//////////////////////////////// ACCORDION /////////////////////////////////////////////////
+
+accordionButtons.forEach(button => {
+  button.addEventListener('click', (event) => {
+    console.log('click', event.target.nextElementSibling)
+
+    event.target.classList.toggle("active");
+
+    const panel = event.target.nextElementSibling
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  })
+})

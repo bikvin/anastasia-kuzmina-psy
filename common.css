@@ -70,7 +70,8 @@ h4 {
 .what-i-work-with h2,
 .prices h2,
 .work-progress h2,
-.slider h2 {
+.slider h2,
+.accordion-section h2 {
   text-align: center;
 }
 
