@@ -433,7 +433,7 @@
 }
 
 .accordion-section h2 {
-  margin-bottom:70px;
+  margin-bottom: 70px;
 }
 
 .accordion-section .wrapper {
@@ -465,7 +465,7 @@
   width: 24px;
   /* color: var(--light-blue-color); */
   /* border: 1px solid red; */
-  transition: all 1s; 
+  transition: all 1s;
 }
 
 .accordion-section button.active::after {
@@ -484,8 +484,6 @@
   border-radius: 50%;
   background: var(--dark-gray-color);
 }
-
-
 
 .accordion-section .panel {
   padding: 0 18px;
@@ -616,6 +614,8 @@
     transform: translate(-50%, -50%);
     z-index: 2;
   }
+
+  
 }
 
 /*----------------------------------END OF  < 760 px ----------------------------------------------*/

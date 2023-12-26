@@ -351,11 +351,18 @@ footer .name {
 
   footer ul li {
     flex: 1 1 100%;
-    
   }
 
   .parallax {
     background-attachment: inherit;
+  }
+
+  .parallax.exit,
+  .parallax.exit2,
+  .parallax.face,
+  .parallax.sofa,
+  .parallax.webinar2 {
+    background-size: contain;
   }
 }
 
