@@ -455,7 +455,7 @@
 }
 
 .accordion-section button::after {
-  content: url(/img/icons/ui/plus.svg);
+  content: url(img/icons/ui/plus.svg);
   position: absolute;
   right: 20px;
   top: calc(50% - 12px);
